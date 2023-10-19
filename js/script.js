@@ -11,25 +11,36 @@ const kmPrice = 0.21;
 console.log(kmPrice);
 
 // DATI IN INPUT DALL' UTENTE
-let username = "";
-let distance = "";
-let userAge = "";
 const sendBtn = document.getElementById("send");
 
 sendBtn.addEventListener("click", function() {
-    let usernameInput = document.getElementById("name");
-    let distanceInput = document.getElementById("distance");
-    let ageInput = document.getElementById("age");
+    const usernameInput = document.getElementById("name");
+    const distanceInput = document.getElementById("distance");
+    const ageInput = document.getElementById("age");
 
-    let username = usernameInput.value;
-    let distance = parseInt(distanceInput.value);
-    let userAge = parseInt(ageInput.value);
+    const username = usernameInput.value;
+    const distance = parseInt(distanceInput.value);
+    const userAge = parseInt(ageInput.value);
 
     console.log("ok");
     console.log(username, distance, userAge);
+
+
+    // LOGICA DEL PROGRAMMA
+    const ticketPrice = distance * kmPrice;
+    console.log(ticketPrice);
+    let finalPrice = "";
+
+    if (userAge < 18) {
+        finalPrice = (ticketPrice - (ticketPrice * disc18)).toFixed(2);
+    } else if (userAge > 65) {
+        finalPrice = (ticketPrice - (ticketPrice * disc65)).toFixed(2);
+    }
+
+    finalPrice = parseInt(finalPrice);
+    console.log(finalPrice);
 })
 
-console.log(username, distance, userAge);
 
 
-// LOGICA DEL PROGRAMMA
+
