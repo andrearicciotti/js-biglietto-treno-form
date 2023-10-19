@@ -27,6 +27,7 @@ Inizialmente inizializzeremo le variabili con i dati noti, quali:
 Successivamente al click del bottone da parte dell' utente procederemo a raccogliere i dati mancanti:
 
 - Numero di km da percorrere
+- Nome e Cognome del passeggero
 - Eta' del passeggero
 
 **2. Logica del programma**
