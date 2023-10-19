@@ -29,16 +29,26 @@ sendBtn.addEventListener("click", function() {
     // LOGICA DEL PROGRAMMA
     const ticketPrice = distance * kmPrice;
     console.log(ticketPrice);
-    let finalPrice = "";
+    let finalPrice = ticketPrice.toFixed(2);
 
     if (userAge < 18) {
         finalPrice = (ticketPrice - (ticketPrice * disc18)).toFixed(2);
     } else if (userAge > 65) {
         finalPrice = (ticketPrice - (ticketPrice * disc65)).toFixed(2);
     }
-
-    finalPrice = parseInt(finalPrice);
     console.log(finalPrice);
+
+    // PREPARO IL MESSAGGIO
+    document.getElementById("username").innerHTML = username;
+    
+    let ageType ="";
+    if (userAge < 18) {
+        ageType = "under18"
+    } else if (userAge > 65) {
+        ageType = "over65"
+    }
+    console.log(ageType);
+    document.getElementById("age-type").innerHTML = ageType;
 })
 
 
