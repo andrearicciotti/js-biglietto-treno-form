@@ -18,58 +18,88 @@
 
 <body>
 
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <form>
+    <div class="ms_container w-100 vh-100">
 
-                <div class="col-12">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nome e Cognome</label>
-                        <input type="text" class="form-control" id="name">
+        <div class="container py-5">
+
+            <div class="row justify-content-center">
+
+                <!-- form inserimento dati -->
+                <form>
+
+                    <div class="col-6 fw-semibold text-center py-4 mx-auto text-white">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome e Cognome</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="distance" class="form-label">Distanza da percorrere(KM)</label>
+                            <input type="text" class="form-control" id="distance">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="age" class="form-label">Eta'</label>
+                            <input type="text" class="form-control" id="age">
+
+                        </div>
+
                     </div>
 
-                    <div class="mb-3">
-                        <label for="distance" class="form-label">Distanza da percorrere(KM)</label>
-                        <input type="text" class="form-control" id="distance">
+                    <div class="col-auto text-center">
+
+                        <div class="ms_buttons pb-5">
+
+                            <a class="btn btn-primary mx-2" id="send">Genera</a>
+                            <a class="btn btn-danger mx-2" id="clear">Annulla</a>
+
+                        </div>
+
                     </div>
 
-                    <div class="mb-3">
-                        <label for="age" class="form-label">Eta'</label>
-                        <input type="text" class="form-control" id="age">
+                </form>
+                <!-- /form inserimento dati -->
+
+                <!-- preventivo biglietto -->
+                <div class="col-4 p-0 text-center hidden d-none">
+
+                    <div class="card mw-100" style="max-width: 18rem;">
+
+                        <div class="card-header">
+                            <h5 class=" mb-0">Il tuo biglietto</h4>
+                        </div>
+
+                        <div class="card-body">
+
+                            <ul class="list-group list-group-flush text-start">
+
+                                <li class="list-group-item">Nome passeggero<span id="username"
+                                        class="fw-semibold ps-4 "></span></li>
+
+                                <li class="list-group-item">Offerta<span id="age-type"
+                                        class="fw-semibold ps-4 "></span></li>
+
+                                <li class="list-group-item">Carrozza<span id="random-place"
+                                        class="fw-semibold ps-4 "></span></li>
+
+                                <li class="list-group-item">Costo biglietto<span id="final-price"
+                                        class="fw-semibold ps-4 "></span></li>
+
+                            </ul>
+
+                            <div class="btn btn-success my-3">
+                                Acquista
+                            </div>
+
+                        </div>
+
                     </div>
+
                 </div>
+                <!-- /preventivo biglietto -->
 
-                <div class="col-auto text-center">
-                    <div class="ms_buttons">
-
-                        <a class="btn btn-primary" id="send">Genera</a>
-                        <a class="btn btn-danger" id="clear">Annulla</a>
-
-                    </div>
-                </div>
-
-            </form>
-
-            <div class="col-4 my-5 text-center">
-                <div class="card mw-100 border mb-3" style="max-width: 18rem;">
-                    <div class="card-header"><h4>Il tuo biglietto</h4></div>
-                    <div class="card-body">
-
-                      <ul class="list-group list-group-flush text-start">
-
-                        <li class="list-group-item">Nome passeggero <span id="username" class="fw-semibold ps-4">username</span></li>
-                        <li class="list-group-item">Offerta<span id="age-type" class="fw-semibold ps-4">username</span></li>
-                        <li class="list-group-item">Carrozza<span id="random-place" class="fw-semibold ps-4">username</span></li>
-                        <li class="list-group-item">Codice CP<span id="random-code" class="fw-semibold ps-4">username</span></li>
-                        <li class="list-group-item">Costo biglietto<span id="final-price" class="fw-semibold ps-4">username</span></li>
-                    
-                      </ul>
-                      <div class="card-footer fw-semibold fs-5">
-                        Buon viaggio
-                      </div>
-                    </div>
-                  </div>
             </div>
+
         </div>
 
     </div>

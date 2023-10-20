@@ -16,6 +16,15 @@ img {
     max-width: 100%;
 }
 
+body {
+    background-image: url(../img/train.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.ms_container {
+    background-color: rgba(1, 1, 1, 0.6);
+}
 
 /* UTILITIES */
 

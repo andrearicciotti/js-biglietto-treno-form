@@ -41,3 +41,12 @@ Successivamente al click del bottone da parte dell' utente procederemo a raccogl
 
 - Stampare il messaggio nel documento HTML.
 
+---
+
+## Anteprima 
+
+![Anteprima](img/preview-jstrain.png)
+
+***Sentiti libero di provarla! :)***
+
+---
